@@ -1,0 +1,88 @@
+<template>
+  <a-drawer :width="300" title="示例导航" :placement="placement" :visible="visible" @close="onClose">
+    <a-tree
+      v-model:selectedKeys="selectedKeys"
+      v-model:expandedKeys="expandedKeys"
+      :tree-data="treeData"
+    ></a-tree>
+  </a-drawer>
+  <a-affix
+    :style="{ position: 'absolute', bottom: 0, left: 0, zIndex: 999, cursor: 'pointer' }"
+    v-if="!visible"
+  >
+    <ice-icon icon="icon-park-outline:menu-fold-one" :size="30" @click="visible = true"></ice-icon>
+  </a-affix>
+</template>
+<script lang="ts" setup>
+import { watch, ref } from 'vue';
+import { useRouter } from "vue-router";
+import type { DrawerProps } from 'ant-design-vue';
+import { IceIcon } from "ice-datav-ui";
+import "ice-datav-ui/lib/theme-default/IceHeader1.css";
+
+const treeData = [
+  {
+    title: 'ice-datav-ui',
+    key: '0-0',
+    children: [
+      {
+        title: '大屏组件',
+        key: '0-0-0',
+        children: [
+          { title: 'IceHeader 页头', key: 'header' },
+          { title: 'IceIcon 图标', key: 'icon' },
+          { title: '0-0-0-2', key: '0-0-0-2' },
+        ],
+      },
+      {
+        title: 'GIS组件',
+        key: '0-0-1',
+        children: [
+          { title: '0-0-1-0', key: '0-0-1-0' },
+          { title: '0-0-1-1', key: '0-0-1-1' },
+          { title: '0-0-1-2', key: '0-0-1-2' },
+        ],
+      },
+      {
+        title: 'Admin组件',
+        key: '0-0-1',
+        children: [
+          { title: '0-0-1-0', key: '0-0-1-0' },
+          { title: '0-0-1-1', key: '0-0-1-1' },
+          { title: '0-0-1-2', key: '0-0-1-2' },
+        ],
+      }
+    ],
+  },
+];
+
+const selectedKeys = ref<string[]>([]);
+const expandedKeys = ref<string[]>(['0-0-0', '0-0-1']);
+
+const router = useRouter()
+
+watch(expandedKeys, () => {
+  console.info('expandedKeys', expandedKeys);
+});
+
+watch(selectedKeys, () => {
+  console.log('selectedKeys', selectedKeys.value[0]);
+
+  router.push(`/${selectedKeys.value[0]}`) // -> /user/eduardo
+
+});
+
+
+const placement = ref<DrawerProps['placement']>('left');
+const visible = ref<boolean>(false);
+
+const showDrawer = () => {
+  visible.value = true;
+};
+
+const onClose = () => {
+  visible.value = false;
+};
+
+</script>
+<style></style>
