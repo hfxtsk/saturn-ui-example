@@ -7,10 +7,10 @@
     ></a-tree>
   </a-drawer>
   <a-affix
-    :style="{ position: 'absolute', bottom: 0, left: 0, zIndex: 999, cursor: 'pointer' }"
+    class="center"
     v-if="!visible"
   >
-    <ice-icon icon="icon-park-outline:menu-fold-one" :size="30" @click="visible = true"></ice-icon>
+    <ice-icon icon="icon-park-outline:menu-unfold" :size="30" @click="visible = true"></ice-icon>
   </a-affix>
 </template>
 <script lang="ts" setup>
@@ -38,7 +38,7 @@ const treeData = [
         title: 'GIS组件',
         key: '0-0-1',
         children: [
-          { title: '0-0-1-0', key: '0-0-1-0' },
+          { title: 'IceEarth 三维地球', key: 'earth' },
           { title: '0-0-1-1', key: '0-0-1-1' },
           { title: '0-0-1-2', key: '0-0-1-2' },
         ],
@@ -85,4 +85,15 @@ const onClose = () => {
 };
 
 </script>
-<style></style>
+<style>
+.center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 999;
+  cursor: pointer;
+  background-color: #fff;
+  transform:translateX(-50%);
+  opacity: .8;
+}
+</style>

@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import '@purge-icons/generated';
 import IceHeaderDemo from './components/IceHeaderDemo.vue'
 import IceIconDemo from './components/IceIconDemo.vue'
+import IceEarthDemo from './components/IceEarthDemo.vue'
 
 // import IceDataV from "ice-datav-ui";
 // import "ice-datav-ui/lib/theme-default/index.css";
@@ -18,6 +19,7 @@ const routes = [
   { path: '/', component: IceHeaderDemo },
   { path: '/header', component: IceHeaderDemo },
   { path: '/icon', component: IceIconDemo },
+  { path: '/earth', component: IceEarthDemo },
 ]
 
 // 3. 创建路由实例并传递 `routes` 配置
