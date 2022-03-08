@@ -2,7 +2,6 @@
   <a-drawer
     :width="300"
     title="示例导航"
-    :placement="placement"
     :visible="visible"
     @close="onClose"
   >
@@ -14,7 +13,7 @@
   </a-drawer>
   <a-affix class="center" v-if="!visible">
     <ice-icon
-      icon="icon-park-outline:menu-unfold"
+      icon="icon-park-outline:indent-left"
       :size="30"
       @click="visible = true"
     ></ice-icon>
@@ -23,13 +22,12 @@
 <script lang="ts" setup>
 import { watch, ref } from "vue";
 import { useRouter } from "vue-router";
-import type { DrawerProps } from "ant-design-vue";
 import { IceIcon } from "ice-datav-ui";
 import "ice-datav-ui/lib/theme-default/IceHeader1.css";
 
 const treeData = [
   {
-    title: "ice-datav-ui",
+    title: "IceDataV",
     key: "0-0",
     children: [
       {
@@ -81,16 +79,12 @@ const expandedKeys = ref<string[]>(["0-0-0", "0-0-1"]);
 const router = useRouter();
 
 watch(expandedKeys, () => {
-  console.info("expandedKeys", expandedKeys);
 });
 
 watch(selectedKeys, () => {
-  console.log("selectedKeys", selectedKeys.value[0]);
-
   router.push(`/${selectedKeys.value[0]}`); // -> /user/eduardo
 });
 
-const placement = ref<DrawerProps["placement"]>("left");
 const visible = ref<boolean>(false);
 
 const showDrawer = () => {
@@ -104,12 +98,13 @@ const onClose = () => {
 <style>
 .center {
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: calc(50% - 32px);
+  right: 0;
   z-index: 999;
   cursor: pointer;
   background-color: #fff;
   transform: translateX(-50%);
   opacity: 0.8;
+  overflow: hidden;
 }
 </style>

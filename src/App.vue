@@ -19,5 +19,6 @@ import NavList from './components/NavList.vue'
   height: 100%;
   position: relative;
   user-select: none;
+  background-image: linear-gradient(to right, rgb(48, 46, 46), rgb(92, 92, 92));
 }
 </style>
