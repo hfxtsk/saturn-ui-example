@@ -1,0 +1,61 @@
+<template>
+  <IceScrollbar :max-height="490" style="width: max-content;">
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+    <div>这是一个滚动条</div>
+  </IceScrollbar>
+</template>
+
+<script setup lang="ts">
+import { IceScrollbar } from "ice-datav-ui";
+import "ice-datav-ui/lib/theme-default/IceScrollbar.css";
+</script>
