@@ -9,17 +9,14 @@ const value = ref("gis:earth-america")
 </script>
 
 <template>
-  <ice-icon :icon="value" :size="40"></ice-icon>
+  <ice-icon icon="gis:earth-america" :size="40"></ice-icon>
+  <ice-icon icon="ic:baseline-airplanemode-active" :size="40"></ice-icon>
+  <ice-icon icon="ic:baseline-android" :size="40"></ice-icon>
+  <ice-icon icon="ic:baseline-cloud-done" :size="40"></ice-icon>
+  <ice-icon icon="ant-design:alipay-circle-filled" :size="40"></ice-icon>
 
- <a-affix :style="{ position: 'absolute', bottom: 0, right: 0 }">
-    <a-input
-      v-model:value="value"
-      placeholder="icon text"
-      size="large"
-      addon-before="IceIcon"
-    />
-  </a-affix>
-  
+
+
 </template>
 
 

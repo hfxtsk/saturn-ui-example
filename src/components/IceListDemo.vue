@@ -1,5 +1,5 @@
 <template>
-  <ice-list :listData="listData"></ice-list>
+  <ice-list :listData="listData" style="width: 60%"></ice-list>
 </template>
 
 <script setup lang='ts'>

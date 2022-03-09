@@ -1,5 +1,5 @@
 <template>
-  <IceScrollbar :max-height="490" style="width: max-content;">
+  <ice-scrollbar :max-height="490" style="width: 300px;">
     <div>这是一个滚动条</div>
     <div>这是一个滚动条</div>
     <div>这是一个滚动条</div>
@@ -52,7 +52,7 @@
     <div>这是一个滚动条</div>
     <div>这是一个滚动条</div>
     <div>这是一个滚动条</div>
-  </IceScrollbar>
+  </ice-scrollbar>
 </template>
 
 <script setup lang="ts">
