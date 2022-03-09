@@ -3,8 +3,8 @@
 </template>
 
 <script setup lang='ts'>
-import { IceList } from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceList.css";
+import { IceList } from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceList.css";
 import { ref } from "vue";
 
 const listData = ref([

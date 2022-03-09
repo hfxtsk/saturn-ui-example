@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 components.d.ts
 pnpm-lock.yaml
+
+
+example
+example.tar

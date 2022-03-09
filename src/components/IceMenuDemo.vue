@@ -65,10 +65,10 @@ import {
   IceIcon,
   IceMenuItemGroup,
   IceHeader3,
-} from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceMenu1.css";
-import "ice-datav-ui/lib/theme-default/IceMenu2.css";
-import "ice-datav-ui/lib/theme-default/IceHeader3.css";
+} from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceMenu1.css";
+import "saturn-ui/lib/theme-default/IceMenu2.css";
+import "saturn-ui/lib/theme-default/IceHeader3.css";
 import { ref } from "vue";
 
 const value = ref(1);

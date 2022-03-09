@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { IceWrapper2 ,IceIcon} from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceWrapper2.css";
-import "ice-datav-ui/lib/theme-default/IceIcon.css";
+import { IceWrapper2 ,IceIcon} from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceWrapper2.css";
+import "saturn-ui/lib/theme-default/IceIcon.css";
 </script>

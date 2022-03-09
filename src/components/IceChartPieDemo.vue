@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { IcePanel, IceChartPie } from "ice-datav-ui";
+import { IcePanel, IceChartPie } from "saturn-ui";
 
-import "ice-datav-ui/lib/theme-default/IcePanel1.css";
+import "saturn-ui/lib/theme-default/IcePanel1.css";
 </script>

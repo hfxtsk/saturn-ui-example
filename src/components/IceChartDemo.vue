@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang='ts'>
-import { IceChart } from "ice-datav-ui";
+import { IceChart } from "saturn-ui";
 import * as echarts from 'echarts';
 
 const option = {

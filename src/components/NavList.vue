@@ -1,6 +1,7 @@
 <template>
   <a-drawer
     :width="300"
+    :mask="false"
     title="示例导航"
     :visible="visible"
     @close="onClose"
@@ -22,12 +23,12 @@
 <script lang="ts" setup>
 import { watch, ref } from "vue";
 import { useRouter } from "vue-router";
-import { IceIcon } from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceHeader1.css";
+import { IceIcon } from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceHeader1.css";
 
 const treeData = [
   {
-    title: "IceDataV",
+    title: "SaturnUI🪐",
     key: "0-0",
     children: [
       {

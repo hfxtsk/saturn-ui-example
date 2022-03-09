@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { IcePanel, IceWrapper2, IceWrapperItem } from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceWrapper2.css";
-import "ice-datav-ui/lib/theme-default/IcePanel1.css";
+import { IcePanel, IceWrapper2, IceWrapperItem } from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceWrapper2.css";
+import "saturn-ui/lib/theme-default/IcePanel1.css";
 </script>

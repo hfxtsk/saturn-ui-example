@@ -56,6 +56,6 @@
 </template>
 
 <script setup lang="ts">
-import { IceScrollbar } from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceScrollbar.css";
+import { IceScrollbar } from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceScrollbar.css";
 </script>

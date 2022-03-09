@@ -11,9 +11,9 @@
 </template>
 
 <script setup lang="ts">
-import { IceDialog } from "ice-datav-ui";
+import { IceDialog } from "saturn-ui";
 import { ref } from "vue";
-import "ice-datav-ui/lib/theme-default/IceDialog.css";
+import "saturn-ui/lib/theme-default/IceDialog.css";
 
 const visible = ref(true);
 </script>

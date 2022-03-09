@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { IceEarth } from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceEarth.css";
+import { IceEarth } from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceEarth.css";
 </script>
 
 <template>

@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from "vue-router";
 import '@purge-icons/generated';
+
 import IceHeaderDemo from './components/IceHeaderDemo.vue'
 import IceIconDemo from './components/IceIconDemo.vue'
 import IceEarthDemo from './components/IceEarthDemo.vue'
@@ -18,8 +19,8 @@ import IceChartBarDemo from './components/IceChartBarDemo.vue'
 import IceChartPieDemo from './components/IceChartPieDemo.vue'
 import IceChartLineDemo from './components/IceChartLineDemo.vue'
 
-// import IceDataV from "ice-datav-ui";
-// import "ice-datav-ui/lib/theme-default/index.css";
+// import SaturnUI from "saturn-ui";
+// import "saturn-ui/lib/theme-default/index.css";
 
 import App from './App.vue'
 // 1. 定义路由组件.

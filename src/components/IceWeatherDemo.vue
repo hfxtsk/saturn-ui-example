@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang='ts'>
-import { IceWeather } from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/Iceweather.css";
+import { IceWeather } from "saturn-ui";
+import "saturn-ui/lib/theme-default/Iceweather.css";
 
 </script>

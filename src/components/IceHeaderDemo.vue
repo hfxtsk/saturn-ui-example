@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { IceHeader ,IceHeader2,IceHeader3} from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceHeader1.css";
-import "ice-datav-ui/lib/theme-default/IceHeader2.css";
-import "ice-datav-ui/lib/theme-default/IceHeader3.css";
+import { IceHeader ,IceHeader2,IceHeader3} from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceHeader1.css";
+import "saturn-ui/lib/theme-default/IceHeader2.css";
+import "saturn-ui/lib/theme-default/IceHeader3.css";
 
 const value = ref(1)
 </script>

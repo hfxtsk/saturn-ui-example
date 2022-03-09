@@ -3,6 +3,6 @@
 </template>
 
 <script setup lang="ts">
-import { IceClock } from "ice-datav-ui";
+import { IceClock } from "saturn-ui";
 
 </script>

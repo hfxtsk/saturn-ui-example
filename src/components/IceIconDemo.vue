@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { IceIcon } from "ice-datav-ui";
-import "ice-datav-ui/lib/theme-default/IceHeader1.css";
+import { IceIcon } from "saturn-ui";
+import "saturn-ui/lib/theme-default/IceHeader1.css";
 
 import { ref } from 'vue'
 
