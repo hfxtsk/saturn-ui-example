@@ -13,7 +13,7 @@ import IceListDemo from './components/IceListDemo.vue'
 import IceScrollbarDemo from './components/IceScrollbarDemo.vue'
 import IceClockDemo from './components/IceClockDemo.vue'
 import IceWeatherDemo from './components/IceWeatherDemo.vue'
-import IceNumberFlopDemo from './components/IceNumberFlopDemo.vue'
+import IceNumberFlipDemo from './components/IceNumberFlipDemo.vue'
 import IceChartDemo from './components/IceChartDemo.vue'
 import IceChartBarDemo from './components/IceChartBarDemo.vue'
 import IceChartPieDemo from './components/IceChartPieDemo.vue'
@@ -42,11 +42,11 @@ const routes = [
   { path: '/scrollbar', component: IceScrollbarDemo },
   { path: '/clock', component: IceClockDemo },
   { path: '/weather', component: IceWeatherDemo },
-  { path: '/numberflop', component: IceNumberFlopDemo },
+  { path: '/numberFlip', component: IceNumberFlipDemo },
   { path: '/chart', component: IceChartDemo },
-  { path: '/chartbar', component: IceChartBarDemo },
-  { path: '/chartpie', component: IceChartPieDemo },
-  { path: '/chartline', component: IceChartLineDemo },
+  { path: '/chartBar', component: IceChartBarDemo },
+  { path: '/chartPie', component: IceChartPieDemo },
+  { path: '/chartLine', component: IceChartLineDemo },
 ]
 
 // 3. 创建路由实例并传递 `routes` 配置

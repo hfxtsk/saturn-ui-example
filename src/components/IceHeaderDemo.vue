@@ -10,7 +10,7 @@ const value = ref(1)
 
 <template>
   <ice-header v-if="value == 1"></ice-header>
-  <ice-header2 v-if="value == 2"></ice-header2>
+  <ice-header2 v-if="value == 2" title="自定义标题"></ice-header2>
   <ice-header3 v-if="value == 3" logo="https://cdn.jsdelivr.net/gh/hfxtsk/cdn/hfxtsk.cn/logo/logo.svg"></ice-header3>
 
   <a-affix :style="{ position: 'absolute', bottom: 0, right: 0 }">

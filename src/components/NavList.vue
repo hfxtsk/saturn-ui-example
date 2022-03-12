@@ -1,11 +1,5 @@
 <template>
-  <a-drawer
-    :width="300"
-    :mask="false"
-    title="示例导航"
-    :visible="visible"
-    @close="onClose"
-  >
+  <a-drawer :width="300" :mask="false" title="示例导航" :visible="visible" @close="onClose">
     <a-tree
       v-model:selectedKeys="selectedKeys"
       v-model:expandedKeys="expandedKeys"
@@ -13,11 +7,7 @@
     ></a-tree>
   </a-drawer>
   <a-affix class="center" v-if="!visible">
-    <ice-icon
-      icon="icon-park-outline:indent-left"
-      :size="30"
-      @click="visible = true"
-    ></ice-icon>
+    <ice-icon icon="icon-park-outline:indent-left" :size="30" @click="visible = true"></ice-icon>
   </a-affix>
 </template>
 <script lang="ts" setup>
@@ -29,7 +19,7 @@ import "saturn-ui/lib/theme-default/IceHeader1.css";
 const treeData = [
   {
     title: "SaturnUI🪐",
-    key: "0-0",
+    key: "https://saturn.hfxtsk.cn",
     children: [
       {
         title: "大屏组件",
@@ -45,11 +35,11 @@ const treeData = [
           { title: "IceScrollbar 滚动条", key: "scrollbar" },
           { title: "IceClock 时钟", key: "clock" },
           { title: "IceWeather 天气", key: "weather" },
-          { title: "IceNumberFlop 数字翻盘", key: "numberflop" },
+          { title: "IceNumberFlip 数字翻转", key: "numberFlip" },
           { title: "IceChart 图表", key: "chart" },
-          { title: "IceChartBar 柱状图", key: "chartbar" },
-          { title: "IceChartPie 饼状图", key: "chartpie" },
-          { title: "IceChartLine 线形图", key: "chartline" },
+          { title: "IceChartBar 柱状图", key: "chartBar" },
+          { title: "IceChartPie 饼状图", key: "chartPie" },
+          { title: "IceChartLine 线形图", key: "chartLine" },
         ],
       },
       {
@@ -83,7 +73,17 @@ watch(expandedKeys, () => {
 });
 
 watch(selectedKeys, () => {
-  router.push(`/${selectedKeys.value[0]}`); // -> /user/eduardo
+  const url = selectedKeys.value[0]
+  if (url) {
+    if (url.startsWith('0')) {
+      return;
+    }
+    if (url.startsWith('http')) {
+      window.open(url)
+    } else {
+      router.push(`/${url}`); // -> /user/eduardo
+    }
+  }
 });
 
 const visible = ref<boolean>(false);
