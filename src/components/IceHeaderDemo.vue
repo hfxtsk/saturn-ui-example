@@ -4,6 +4,7 @@ import { IceHeader ,IceHeader2,IceHeader3} from "saturn-ui";
 import "saturn-ui/lib/theme-default/IceHeader1.css";
 import "saturn-ui/lib/theme-default/IceHeader2.css";
 import "saturn-ui/lib/theme-default/IceHeader3.css";
+import "saturn-ui/lib/theme-default/IceFont.css";
 
 const value = ref(1)
 </script>

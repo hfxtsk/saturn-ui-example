@@ -1,5 +1,5 @@
 <template>
-  <a-drawer :width="300" :mask="false" title="示例导航" :visible="visible" @close="onClose">
+  <a-drawer :width="400" :mask="false" title="SaturnUI组件库" :visible="visible" @close="onClose">
     <a-tree
       v-model:selectedKeys="selectedKeys"
       v-model:expandedKeys="expandedKeys"
@@ -18,54 +18,72 @@ import "saturn-ui/lib/theme-default/IceHeader1.css";
 
 const treeData = [
   {
-    title: "SaturnUI🪐",
-    key: "https://saturn.hfxtsk.cn",
+    title: "大屏模块 saturn-ui",
+    key: "1-0-0",
     children: [
-      {
-        title: "大屏组件",
-        key: "0-0-0",
-        children: [
-          { title: "IceHeader 页头", key: "header" },
-          { title: "IceIcon 图标", key: "icon" },
-          { title: "IceMenu 菜单", key: "menu" },
-          { title: "IceWrapper 包装", key: "wrapper" },
-          { title: "IcePanel 面板", key: "panel" },
-          { title: "IceDialog 可拖动面板", key: "dialog" },
-          { title: "IceList 列表", key: "list" },
-          { title: "IceScrollbar 滚动条", key: "scrollbar" },
-          { title: "IceClock 时钟", key: "clock" },
-          { title: "IceWeather 天气", key: "weather" },
-          { title: "IceNumberFlip 数字翻转", key: "numberFlip" },
-          { title: "IceChart 图表", key: "chart" },
-          { title: "IceChartBar 柱状图", key: "chartBar" },
-          { title: "IceChartPie 饼状图", key: "chartPie" },
-          { title: "IceChartLine 线形图", key: "chartLine" },
-        ],
-      },
-      {
-        title: "GIS组件",
-        key: "0-0-1",
-        children: [
-          { title: "IceEarth 三维地球", key: "earth" },
-          { title: "0-0-1-1", key: "0-0-1-1" },
-          { title: "0-0-1-2", key: "0-0-1-2" },
-        ],
-      },
-      {
-        title: "Admin组件",
-        key: "0-0-1",
-        children: [
-          { title: "0-0-1-0", key: "0-0-1-0" },
-          { title: "0-0-1-1", key: "0-0-1-1" },
-          { title: "0-0-1-2", key: "0-0-1-2" },
-        ],
-      },
+      { title: "IceHeader 页头", key: "header" },
+      { title: "IceMenu 菜单", key: "menu" },
+      { title: "IceWrapper 包装", key: "wrapper" },
+      { title: "IcePanel 面板", key: "panel" },
+      { title: "IceIcon 图标", key: "icon" },
+      { title: "IceDialog 弹窗", key: "dialog" },
+      { title: "IceList 列表", key: "list" },
+      { title: "IceScrollbar 滚动条", key: "scrollbar" },
+      { title: "IceVirtualList 虚拟列表", key: "virtualList" },
+      { title: "IceClock 时钟", key: "clock" },
+      { title: "IceWeather 天气", key: "weather" },
+      { title: "IceNumberFlip 数字翻转", key: "numberFlip" },
+      { title: "IceImage 图片", key: "image" },
+    ],
+  },
+  {
+    title: "图表模块 @saturn-ui/chart",
+    key: "2-0-0",
+    children: [
+      { title: "IceChart 图表", key: "chart" },
+      { title: "IceChartBar 柱状图", key: "chartBar" },
+      { title: "IceChartPie 饼状图", key: "chartPie" },
+      { title: "IceChartLine 线形图", key: "chartLine" },
+      { title: "IceChartMap 地图", key: "chartMap" },
+    ],
+  },
+  {
+    title: "GIS模块 @saturn-ui/mars3d",
+    key: "3-0-0",
+    children: [
+      { title: "IceEarth 三维地球", key: "earth" },
+      { title: "IceToolbar 工具栏", key: "toolbar" },
+      { title: "IceBasemapMgr 底图管理", key: "basemapMgr" },
+      { title: "IceLayerMgr 图层管理", key: "layerMgr" },
+      { title: "IceMapCalc 图上量算", key: "mapCalc" },
+      { title: "IceSelectPoint 图上选点", key: "selectPoint" },
+      { title: "IceMarker 我的标记", key: "marker" },
+      { title: "IceBookmark 我的书签", key: "bookmark" },
+      { title: "IceDrawer 图上标绘", key: "drawer" },
+      { title: "IceGraphicEditor 图形编辑器", key: "graphicEditor" },
+      { title: "IceFlightRoam 飞行漫游", key: "flightRoam" },
+      { title: "IceMapPrint 地图打印", key: "mapPrint" },
+    ],
+  },
+  {
+    title: "视频模块 @saturn-ui/media",
+    key: "4-0-0",
+    children: [
+      { title: "IceMedia 音视频", key: "media" },
+      { title: "IceSplitScreen 分屏", key: "splitScreen" },
+    ],
+  },
+  {
+    title: "后台模块 @saturn-ui/admin",
+    key: "5-0-0",
+    children: [
+      { title: "IceLogin 登录页", key: "login" },
     ],
   },
 ];
 
 const selectedKeys = ref<string[]>([]);
-const expandedKeys = ref<string[]>(["0-0-0", "0-0-1"]);
+const expandedKeys = ref<string[]>(["1-0-0", "3-0-0"]);
 
 const router = useRouter();
 

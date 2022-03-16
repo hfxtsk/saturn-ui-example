@@ -3,7 +3,6 @@
 </template>
 
 <script setup lang="ts">
-import {IceChartBar} from "saturn-ui";
+import { IceChartBar } from "@saturn-ui/chart";
 
-import "saturn-ui/lib/theme-default/IcePanel1.css";
 </script>

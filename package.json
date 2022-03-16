@@ -1,7 +1,7 @@
 {
-  "name": "saturn-ui-example",
+  "name": "@saturn-ui/example",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.2.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -13,7 +13,11 @@
     "echarts": "^5.3.0",
     "mars3d": "^3.2.4",
     "mars3d-cesium": "^1.91.0",
-    "saturn-ui": "=1.1.11",
+    "saturn-ui": "^1.2.2",
+    "@saturn-ui/chart": "^1.2.0",
+    "@saturn-ui/mars3d": "^1.2.0",
+    "@saturn-ui/media": "^1.2.0",
+    "@saturn-ui/admin": "^1.2.0",
     "vue": "^3.2.25",
     "vue-router": "4",
     "xgplayer": "^2.31.4",

@@ -1,9 +1,9 @@
 <template>
-  <ice-chart :option="option" width="800" height="500"/>
+  <ice-chart :option="option" width="800" height="500" />
 </template>
 
 <script setup lang='ts'>
-import {IceChart} from "saturn-ui";
+import { IceChart } from "@saturn-ui/chart";
 import * as echarts from 'echarts';
 
 const option = {
